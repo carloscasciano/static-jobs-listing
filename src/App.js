@@ -4,41 +4,27 @@ import JobPost from "./components/jobPost/JobPost";
 import Header from "./components/header/Header";
 
 import { dummyJobs } from "./dummyData/dummyJobs";
-console.log(dummyJobs);
 
 function App() {
-  const [filteredLevels, setFilteredLevel] = useState([]);
-  const [filteredRoles, setFilteredRole] = useState([]);
-  const [filteredLanguages, setFilteredLanguages] = useState([]);
+  const [filteredItems, setFilteredItems] = useState(["Senior", "Frontend", "JavaScript"]);
 
-  const handleFilteredItems = (section, item) => {
-    let filteredArray = [...section];
+  const handleFilteredItems = (item) => {
+    let filteredArray = [...filteredItems];
     filteredArray.includes(item)
       ? filteredArray.splice(filteredArray.indexOf(item), 1)
       : filteredArray.push(item);
-
-    section === filteredLevels
-      ? setFilteredLevel(filteredArray)
-      : section === filteredRoles
-      ? setFilteredRole(filteredArray)
-      : setFilteredLanguages(filteredArray);
+    setFilteredItems(filteredArray);
   };
 
   return (
     <>
       <GlobalStyle />
       <Header />
-      <JobPost 
+      <JobPost
         dummyJobs={dummyJobs}
-        filteredLevels={filteredLevels}
-        filteredRoles={filteredRoles}
-        filteredLanguages={filteredLanguages}
+        filteredItems={filteredItems}
         handleFilteredItems={handleFilteredItems}
       />
-
-      
-
-      
     </>
   );
 }

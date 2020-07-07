@@ -1,27 +1,21 @@
 import React from "react";
 import Tablet from "../tablet/Tablet";
+import {filteredJobArrayBuilder} from "../../resources/filteredJobArrayBuilder"
+import {checkArraySubset} from "../../resources/checkArraySubset"
 
 export default function JobPost({
   dummyJobs,
-  filteredLevels,
-  filteredRoles,
-  filteredLanguages,
+  filteredItems,
   handleFilteredItems,
 }) {
-  console.log(dummyJobs);
-  return (
-    <div>
-      <p>Job Post</p>
-      {filteredLevels.map((i) => (
-        <p key={Math.random()}>{i}</p>
-      ))}
-      {filteredRoles.map((i) => (
-        <p key={Math.random()}>{i}</p>
-      ))}
-      {filteredLanguages.map((i) => (
-        <p key={Math.random()}>{i}</p>
-      ))}
 
+  console.log(filteredJobArrayBuilder(dummyJobs[0]))
+
+  console.log(checkArraySubset(filteredItems, filteredJobArrayBuilder(dummyJobs[0]) ))
+
+  return filteredItems.length === 0 ?  (
+    <div>
+      <p>Job Posts:</p>
       {dummyJobs.map((j) => (
         <div key={Math.random()}>
           <p>{j.company}</p>
@@ -29,24 +23,40 @@ export default function JobPost({
           <Tablet
             handleFilteredItems={handleFilteredItems}
             name={j.level}
-            section={filteredLevels}
+
           ></Tablet>
           <Tablet
             handleFilteredItems={handleFilteredItems}
             name={j.role}
-            section={filteredRoles}
+
           ></Tablet>
           {j.languages.map((l) => (
             <div key={Math.random()}>
               <Tablet
                 handleFilteredItems={handleFilteredItems}
                 name={l}
-                section={filteredLanguages}
+
               ></Tablet>
             </div>
           ))}
         </div>
       ))}
     </div>
+  ) : (
+    <div>
+      <p>Job Posts:</p>
+      <p>oi</p>
+      {
+       
+      }
+    </div>
   );
 }
+
+/* 
+  return (
+    filteredLevels === [] && filteredRoles === [] && filteredLanguages === [] ? 
+    
+   : <p>beep</p>
+
+ */
