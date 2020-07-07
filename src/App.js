@@ -6,7 +6,7 @@ import Header from "./components/header/Header";
 import { dummyJobs } from "./dummyData/dummyJobs";
 
 function App() {
-  const [filteredItems, setFilteredItems] = useState(["Senior", "Frontend", "JavaScript"]);
+  const [filteredItems, setFilteredItems] = useState([]);
 
   const handleFilteredItems = (item) => {
     let filteredArray = [...filteredItems];
