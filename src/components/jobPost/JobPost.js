@@ -8,14 +8,9 @@ export default function JobPost({
   filteredItems,
   handleFilteredItems,
 }) {
-  console.log(filteredJobArrayBuilder(dummyJobs[0]));
-
-  console.log(
-    checkArraySubset(filteredItems, filteredJobArrayBuilder(dummyJobs[0]))
-  );
 
   return filteredItems.length === 0 ? (
-    <div>
+    <div style={{marginTop: "100px"}}>
       <p>Job Posts:</p>
       {dummyJobs.map((j) => (
         <div key={Math.random()}>
