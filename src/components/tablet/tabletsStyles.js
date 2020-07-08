@@ -1,4 +1,5 @@
 import styled from "styled-components";
+const mediaShift = "733px";
 
 export const FilterTabletContainer = styled.div`
   display: flex;
@@ -15,6 +16,10 @@ export const FilterTabletContainer = styled.div`
     background-color: hsl(180, 31%, 95%);
     color: hsl(180, 29%, 50%);
     font-weight: 700;
+
+    @media (max-width: ${mediaShift}) {
+      margin: 5px;
+    }
   }
 
   .iconHolder {
