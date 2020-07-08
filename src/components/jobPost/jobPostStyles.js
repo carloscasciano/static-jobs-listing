@@ -40,7 +40,8 @@ export const CompanyContainer = styled.div`
 export const TabletsContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  
+  flex-wrap: wrap;
+  align-items: center;
   height: 155px;
   width: 50%;
   padding: 30px;

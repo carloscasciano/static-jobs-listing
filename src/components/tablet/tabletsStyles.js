@@ -5,7 +5,7 @@ export const FilterTabletContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 35px;
-  margin: 30px 0 30px 30px;
+  margin: 0 0 0 15px;
   opacity: 1;
 
   .textHolder {
