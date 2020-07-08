@@ -21,6 +21,7 @@ export const FilterContainer = styled.div`
   border-radius: 10px;
   background-color: white;
   margin-top: -36px;
+  opacity: ${props => props.visibility === 1 ? 1 : 0};
   -webkit-box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
   -moz-box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
   box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
@@ -36,5 +37,8 @@ export const ClearContainer = styled.div`
   p {
     color: hsl(180, 29%, 50%);
     font-weight: 500;
+    :hover {
+      text-decoration: underline;
+    }
   }
 `;

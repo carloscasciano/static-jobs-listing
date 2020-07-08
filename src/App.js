@@ -19,7 +19,11 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Header />
+      <Header 
+        filteredItems={filteredItems}
+        handleFilteredItems={handleFilteredItems}
+        setFilteredItems={setFilteredItems}
+      />
       <JobPost
         dummyJobs={dummyJobs}
         filteredItems={filteredItems}

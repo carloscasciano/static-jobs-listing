@@ -5,9 +5,9 @@ export default function FilterTablet(props) {
     return (
         <FilterTabletContainer>
             <div className="textHolder">
-               <p>Teste</p> 
+               <p>{props.item}</p> 
             </div>
-            <div className="iconHolder">
+            <div className="iconHolder" onClick={()=>{props.handleFilteredItems(props.item)}}>
                 <p>X</p>
             </div>
 
