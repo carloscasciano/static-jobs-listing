@@ -27,8 +27,9 @@ export const FilterTabletContainer = styled.div`
     background-color: hsl(180, 29%, 50%);
     color: hsl(180, 31%, 95%);
     font-weight: 700;
-    :hover{
-        background-color: hsl(180, 14%, 20%);
+    :hover {
+      cursor: pointer;
+      background-color: hsl(180, 14%, 20%);
     }
   }
 
@@ -40,10 +41,10 @@ export const FilterTabletContainer = styled.div`
     color: hsl(180, 29%, 50%);
     font-weight: 700;
 
-    :hover{
-      background-color: hsl(180, 29%, 50%) ;
-    color: hsl(180, 31%, 95%);
+    :hover {
+      cursor: pointer;
+      background-color: hsl(180, 29%, 50%);
+      color: hsl(180, 31%, 95%);
     }
   }
 `;
-

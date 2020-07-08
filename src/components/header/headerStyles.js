@@ -13,7 +13,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const FilterContainer = styled.div`
-  width: 77%;
+  width: 80%;
   height: 75px;
   display: flex;
   justify-content: space-between;
@@ -21,6 +21,7 @@ export const FilterContainer = styled.div`
   border-radius: 10px;
   background-color: white;
   margin-top: -36px;
+  margin-bottom: 36px;
   opacity: ${props => props.visibility === 1 ? 1 : 0};
   -webkit-box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
   -moz-box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
@@ -38,6 +39,7 @@ export const ClearContainer = styled.div`
     color: hsl(180, 29%, 50%);
     font-weight: 500;
     :hover {
+      cursor: pointer;
       text-decoration: underline;
     }
   }

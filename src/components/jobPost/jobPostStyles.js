@@ -12,12 +12,23 @@ export const JobPostContainer = styled.div`
   justify-content: space-between;
   height: 155px;
   width: 80%;
+  min-width: 80%;
   background-color: white;
   margin: 15px 0 15px 0;
   border-radius: 10px;
   -webkit-box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
   -moz-box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
   box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
+
+  .featuredBar {
+      height: 100%;
+      width: 5px;
+      overflow: hidden;
+      background-color: hsl(180, 29%, 50%);
+      z-index: 1;
+      border-radius: 10px 0 0 10px;
+      opacity: 1;
+  }
 `;
 
 export const CompanyContainer = styled.div`
@@ -29,6 +40,7 @@ export const CompanyContainer = styled.div`
 export const TabletsContainer = styled.div`
   display: flex;
   justify-content: flex-end;
+  
   height: 155px;
   width: 50%;
   padding: 30px;
@@ -41,12 +53,7 @@ export const LogoContainer = styled.div`
   height: 100%;
   width: 30%;
   border-radius: 10px;
-  -webkit-box-shadow: inset 4px 0px 0px 0px hsl(180, 29%, 50%);
-  -moz-box-shadow: inset 4px 0px 0px 0px hsl(180, 29%, 50%);
-  box-shadow: inset 4px 0px 0px 0px hsl(180, 29%, 50%);
 
-  svg {
-  }
 `;
 
 export const CompanyInfoContainer = styled.div`
@@ -112,6 +119,7 @@ export const JobNameContainer = styled.div`
     font-weight: 700;
 
     :hover{
+        cursor: pointer;
         color: hsl(180, 29%, 50%);
     }
   }
