@@ -1,42 +1,58 @@
 import React from "react";
-import Tablet from "../tablet/Tablet";
+import JobTablet from "../tablet/JobTablet";
 import { filteredJobArrayBuilder } from "../../resources/filteredJobArrayBuilder";
 import { checkArraySubset } from "../../resources/checkArraySubset";
+import {
+  JobPostDashboardContainer,
+  JobPostContainer,
+  CompanyContainer,
+  TabletsContainer,
+} from "./jobPostStyles";
 
 export default function JobPost({
   dummyJobs,
   filteredItems,
   handleFilteredItems,
 }) {
-
   return filteredItems.length === 0 ? (
-    <div style={{marginTop: "100px"}}>
-      <p>Job Posts:</p>
-      {dummyJobs.map((j) => (
-        <div key={Math.random()}>
-          <p>{j.company}</p>
-          <p>{j.position}</p>
-          <Tablet
-            handleFilteredItems={handleFilteredItems}
-            name={j.level}
-          ></Tablet>
-          <Tablet
-            handleFilteredItems={handleFilteredItems}
-            name={j.role}
-          ></Tablet>
-          {j.languages.map((l) => (
-            <div key={Math.random()}>
-              <Tablet
-                handleFilteredItems={handleFilteredItems}
-                name={l}
-              ></Tablet>
-            </div>
-          ))}
-        </div>
-      ))}
-    </div>
+    <>
+      <JobPostDashboardContainer>
+        <JobPostContainer>
+          <CompanyContainer></CompanyContainer>
+          <TabletsContainer>
+            <JobTablet name={"Test"}/>
+            <JobTablet name={"Test"}/>
+            <JobTablet name={"Test"}/>
+
+          </TabletsContainer>
+        </JobPostContainer>
+        <p>Job Posts:</p>
+        {dummyJobs.map((j) => (
+          <div key={Math.random()}>
+            <p>{j.company}</p>
+            <p>{j.position}</p>
+            <JobTablet
+              handleFilteredItems={handleFilteredItems}
+              name={j.level}
+            ></JobTablet>
+            <JobTablet
+              handleFilteredItems={handleFilteredItems}
+              name={j.role}
+            ></JobTablet>
+            {j.languages.map((l) => (
+              <div key={Math.random()}>
+                <JobTablet
+                  handleFilteredItems={handleFilteredItems}
+                  name={l}
+                ></JobTablet>
+              </div>
+            ))}
+          </div>
+        ))}
+      </JobPostDashboardContainer>
+    </>
   ) : (
-    <div>
+    <JobPostDashboardContainer>
       <p>Job Posts:</p>
       <p>oi</p>
       {dummyJobs
@@ -47,25 +63,25 @@ export default function JobPost({
           <div key={Math.random()}>
             <p>{j.company}</p>
             <p>{j.position}</p>
-            <Tablet
+            <JobTablet
               handleFilteredItems={handleFilteredItems}
               name={j.level}
-            ></Tablet>
-            <Tablet
+            ></JobTablet>
+            <JobTablet
               handleFilteredItems={handleFilteredItems}
               name={j.role}
-            ></Tablet>
+            ></JobTablet>
             {j.languages.map((l) => (
               <div key={Math.random()}>
-                <Tablet
+                <JobTablet
                   handleFilteredItems={handleFilteredItems}
                   name={l}
-                ></Tablet>
+                ></JobTablet>
               </div>
             ))}
           </div>
         ))}
-    </div>
+    </JobPostDashboardContainer>
   );
 }
 
