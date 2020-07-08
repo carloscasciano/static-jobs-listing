@@ -82,6 +82,7 @@ export default function JobPost({
         )
         .map((j) => (
           <JobPostContainer key={Math.random()}>
+            {j.featured === true ? <div className="featuredBar" /> : <></>}
             <CompanyContainer>
               <LogoContainer>
                 <img src={j.logo} alt={"company"} />
