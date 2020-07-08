@@ -1,4 +1,5 @@
 import styled from "styled-components";
+const mediaShift = "733px";
 
 export const JobPostDashboardContainer = styled.div`
   width: 100%;
@@ -20,14 +21,27 @@ export const JobPostContainer = styled.div`
   -moz-box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
   box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
 
+  @media (max-width: ${mediaShift}) {
+    width: 95%;
+    flex-direction: column;
+    height: 280px;
+    margin: 45px 0 45px 0;
+  }
+
   .featuredBar {
-      height: 100%;
-      width: 5px;
-      overflow: hidden;
-      background-color: hsl(180, 29%, 50%);
-      z-index: 1;
-      border-radius: 10px 0 0 10px;
-      opacity: 1;
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    overflow: hidden;
+    background-color: hsl(180, 29%, 50%);
+    z-index: 1;
+    border-radius: 10px 0 0 10px;
+    opacity: 1;
+
+    @media (max-width: ${mediaShift}) {
+      height: 280px;
+      flex-direction: column;    
+    }
   }
 `;
 
@@ -35,6 +49,10 @@ export const CompanyContainer = styled.div`
   display: flex;
   height: 155px;
   width: 50%;
+
+  @media (max-width: ${mediaShift}) {
+    flex-direction: column;
+  }
 `;
 
 export const TabletsContainer = styled.div`
@@ -45,6 +63,13 @@ export const TabletsContainer = styled.div`
   height: 155px;
   width: 50%;
   padding: 30px;
+
+  @media (max-width: ${mediaShift}) {
+    height: auto;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -55,6 +80,16 @@ export const LogoContainer = styled.div`
   width: 30%;
   border-radius: 10px;
 
+  @media (max-width: ${mediaShift}) {
+    width: 100%;
+  }
+
+  img {
+    @media (max-width: ${mediaShift}) {
+      margin-top: -48px;
+      margin-left: -36px;
+    }
+  }
 `;
 
 export const CompanyInfoContainer = styled.div`
@@ -62,6 +97,10 @@ export const CompanyInfoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
+  @media (max-width: ${mediaShift}) {
+      padding: 10px 0 0 30px;
+    }
 `;
 
 export const CompanyNameContainer = styled.div`
@@ -119,9 +158,9 @@ export const JobNameContainer = styled.div`
     color: hsl(180, 14%, 20%);
     font-weight: 700;
 
-    :hover{
-        cursor: pointer;
-        color: hsl(180, 29%, 50%);
+    :hover {
+      cursor: pointer;
+      color: hsl(180, 29%, 50%);
     }
   }
 `;
@@ -131,9 +170,15 @@ export const ExtraInfoContainer = styled.div`
   justify-content: center;
   align-items: center;
 
+  @media (max-width: ${mediaShift}) {
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+    }
+
   p {
     color: hsl(180, 8%, 52%);
     margin-right: 10px;
     font-weight: 500;
+
   }
 `;
