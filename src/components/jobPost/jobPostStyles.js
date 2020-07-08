@@ -21,18 +21,29 @@ export const JobPostContainer = styled.div`
 `;
 
 export const CompanyContainer = styled.div`
-    height: 155px;
-    width: 50%;
-    background-color: white;
-    border-radius: 10px;
-`
+  height: 155px;
+  width: 50%;
+`;
 
 export const TabletsContainer = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    height: 155px;
-    width: 50%;
-    background-color: white;
-    border-radius: 10px;
-    padding: 30px;
-`
+  display: flex;
+  justify-content: flex-end;
+  height: 155px;
+  width: 50%;
+  padding: 30px;
+`;
+
+export const LogoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 4px 0px 0px 0px hsl(180, 29%, 50%);
+  -moz-box-shadow: inset 4px 0px 0px 0px hsl(180, 29%, 50%);
+  box-shadow: inset 4px 0px 0px 0px hsl(180, 29%, 50%);
+
+  svg {
+  }
+`;

@@ -7,6 +7,7 @@ import {
   JobPostContainer,
   CompanyContainer,
   TabletsContainer,
+  LogoContainer
 } from "./jobPostStyles";
 
 export default function JobPost({
@@ -18,12 +19,15 @@ export default function JobPost({
     <>
       <JobPostDashboardContainer>
         <JobPostContainer>
-          <CompanyContainer></CompanyContainer>
+          <CompanyContainer>
+            <LogoContainer >
+              <img src={"./images/insure.svg"} alt={"company"}/>
+            </LogoContainer>
+          </CompanyContainer>
           <TabletsContainer>
             <JobTablet name={"Test"}/>
             <JobTablet name={"Test"}/>
             <JobTablet name={"Test"}/>
-
           </TabletsContainer>
         </JobPostContainer>
         <p>Job Posts:</p>
