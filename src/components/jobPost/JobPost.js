@@ -7,7 +7,11 @@ import {
   JobPostContainer,
   CompanyContainer,
   TabletsContainer,
-  LogoContainer
+  LogoContainer,
+  CompanyInfoContainer,
+  CompanyNameContainer,
+  JobNameContainer,
+  ExtraInfoContainer
 } from "./jobPostStyles";
 
 export default function JobPost({
@@ -20,14 +24,35 @@ export default function JobPost({
       <JobPostDashboardContainer>
         <JobPostContainer>
           <CompanyContainer>
-            <LogoContainer >
-              <img src={"./images/insure.svg"} alt={"company"}/>
+            <LogoContainer>
+              <img src={"./images/insure.svg"} alt={"company"} />
             </LogoContainer>
+            <CompanyInfoContainer>
+              <CompanyNameContainer>
+                <p>Company Name</p>
+                <div className="new">
+                  <p>NEW!</p>
+                </div>
+                <div className="featured">
+                  <p>FEATURED</p>
+                </div>
+              </CompanyNameContainer>
+              <JobNameContainer>
+                <p>Job Name is Here</p>
+              </JobNameContainer>
+              <ExtraInfoContainer>
+                <p>1 day ago</p>
+                <p>•</p>
+                <p>Contract</p>
+                <p>•</p>
+                <p>Location</p>
+              </ExtraInfoContainer>
+            </CompanyInfoContainer>
           </CompanyContainer>
           <TabletsContainer>
-            <JobTablet name={"Test"}/>
-            <JobTablet name={"Test"}/>
-            <JobTablet name={"Test"}/>
+            <JobTablet name={"Test"} />
+            <JobTablet name={"Test"} />
+            <JobTablet name={"Test"} />
           </TabletsContainer>
         </JobPostContainer>
         <p>Job Posts:</p>

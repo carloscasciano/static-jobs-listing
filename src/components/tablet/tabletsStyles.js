@@ -31,5 +31,19 @@ export const FilterTabletContainer = styled.div`
         background-color: hsl(180, 14%, 20%);
     }
   }
+
+  .jobPostTextHolder {
+    height: 35px;
+    padding: 9px 15px 1px 15px;
+    border-radius: 4px;
+    background-color: hsl(180, 31%, 95%);
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+
+    :hover{
+      background-color: hsl(180, 29%, 50%) ;
+    color: hsl(180, 31%, 95%);
+    }
+  }
 `;
 

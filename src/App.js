@@ -4,6 +4,7 @@ import JobPost from "./components/jobPost/JobPost";
 import Header from "./components/header/Header";
 
 import { dummyJobs } from "./dummyData/dummyJobs";
+console.log(dummyJobs)
 
 function App() {
   const [filteredItems, setFilteredItems] = useState([]);
