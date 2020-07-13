@@ -16,7 +16,7 @@ export const JobPostContainer = styled.div`
   min-width: 80%;
   background-color: white;
   margin: 15px 0 15px 0;
-  border-radius: 10px;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
   -moz-box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
   box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
@@ -36,7 +36,7 @@ export const JobPostContainer = styled.div`
     overflow: hidden;
     background-color: hsl(180, 29%, 50%);
     z-index: 1;
-    border-radius: 10px 0 0 10px;
+    border-radius: 5px 0 0 5px;
     opacity: 1;
 
     @media (max-width: ${mediaShift}) {
@@ -81,7 +81,7 @@ export const LogoContainer = styled.div`
   align-items: center;
   height: 100%;
   width: 30%;
-  border-radius: 10px;
+  border-radius: 5px;
 
   @media (max-width: ${mediaShift}) {
     width: 100%;
