@@ -90,12 +90,20 @@ export default function JobPost({
               <CompanyInfoContainer>
                 <CompanyNameContainer>
                   <p>{j.company}</p>
-                  <div className="new">
-                    <p>NEW!</p>
-                  </div>
-                  <div className="featured">
-                    <p>FEATURED</p>
-                  </div>
+                  {j.new === true ? (
+                    <div className="new">
+                      <p>NEW!</p>
+                    </div>
+                  ) : (
+                    <></>
+                  )}
+                  {j.featured === true ? (
+                    <div className="featured">
+                      <p>FEATURED</p>
+                    </div>
+                  ) : (
+                    <></>
+                  )}
                 </CompanyNameContainer>
                 <JobNameContainer>
                   <p>{j.position}</p>
