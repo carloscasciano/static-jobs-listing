@@ -113,6 +113,7 @@ export const CompanyNameContainer = styled.div`
   p {
     color: hsl(180, 29%, 50%);
     font-weight: 500;
+    
   }
 
   .new {
@@ -161,6 +162,10 @@ export const JobNameContainer = styled.div`
     color: hsl(180, 14%, 20%);
     font-weight: 700;
     font-size: 18px;
+
+    @media (max-width: ${mediaShift}) {
+      font-size: 14px;
+  }
 
     :hover {
       cursor: pointer;
