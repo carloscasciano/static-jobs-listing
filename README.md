@@ -7,8 +7,10 @@ This project was made based on this [Frontend Mentor challenge](https://www.fron
 
 Made with React and Styled Components.
 
-![Demo](https://ccasci-static-job-listings.netlify.app/)
+[Demo](https://ccasci-static-job-listings.netlify.app/)
 
 Result:
+
 ![Desktop](https://media.giphy.com/media/fAhfAwKJDyQLZB9afj/giphy.gif)
+
 ![Mobile](https://media.giphy.com/media/Uttm9kRPU6RUZ9TU1D/giphy.gif)
