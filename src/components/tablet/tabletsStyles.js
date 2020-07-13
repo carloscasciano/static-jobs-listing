@@ -18,7 +18,7 @@ export const FilterTabletContainer = styled.div`
     font-weight: 700;
 
     @media (max-width: ${mediaShift}) {
-      margin: 5px;
+      margin: 5px 0 5px 5px;
     }
   }
 
