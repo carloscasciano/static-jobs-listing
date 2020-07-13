@@ -191,5 +191,4 @@ export const CustomDivider = styled.div`
   width: 90%;
   border-top: 1px solid hsl(180, 8%, 52%);
   margin-top: 20px;
-
 `;
