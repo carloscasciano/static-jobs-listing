@@ -160,6 +160,7 @@ export const JobNameContainer = styled.div`
   p {
     color: hsl(180, 14%, 20%);
     font-weight: 700;
+    font-size: 18px;
 
     :hover {
       cursor: pointer;

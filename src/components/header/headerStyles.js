@@ -7,9 +7,11 @@ export const HeaderContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  ;
   img {
     width: 100%;
     height: 156px;
+    background-color: hsl(180, 29%, 50%);
   }
 `;
 
