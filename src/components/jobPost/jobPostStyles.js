@@ -15,11 +15,11 @@ export const JobPostContainer = styled.div`
   width: 80%;
   min-width: 80%;
   background-color: white;
-  margin: 15px 0 15px 0;
+  margin: 0 0 20px 0;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
-  -moz-box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
-  box-shadow: 0px 11px 20px 0px rgba(123, 142, 142, 0.3);
+  -webkit-box-shadow: 0px 11px 20px 0px rgba(91, 164, 164, 0.4);
+  -moz-box-shadow: 0px 11px 20px 0px rgba(91, 164, 164, 0.4);
+  box-shadow: 0px 11px 20px 0px rgba(91, 164, 164, 0.4);
 
   @media (max-width: ${mediaShift}) {
     width: 95%;
