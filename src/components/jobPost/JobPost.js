@@ -12,12 +12,14 @@ import {
   CompanyNameContainer,
   JobNameContainer,
   ExtraInfoContainer,
+  CustomDivider
 } from "./jobPostStyles";
 
 export default function JobPost({
   dummyJobs,
   filteredItems,
   handleFilteredItems,
+  viewportSize,
 }) {
   return filteredItems.length === 0 ? (
     <>
@@ -60,6 +62,9 @@ export default function JobPost({
                 </ExtraInfoContainer>
               </CompanyInfoContainer>
             </CompanyContainer>
+            {viewportSize > 733
+              ? <></>
+              : <CustomDivider></CustomDivider>}
             <TabletsContainer>
               {filteredJobArrayBuilder(j).map((t) => (
                 <div key={Math.random()}>

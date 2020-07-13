@@ -41,7 +41,7 @@ export const JobPostContainer = styled.div`
 
     @media (max-width: ${mediaShift}) {
       height: 280px;
-      flex-direction: column;    
+      flex-direction: column;
     }
   }
 `;
@@ -102,8 +102,8 @@ export const CompanyInfoContainer = styled.div`
   align-items: flex-start;
 
   @media (max-width: ${mediaShift}) {
-      padding: 10px 0 0 30px;
-    }
+    padding: 10px 0 0 30px;
+  }
 `;
 
 export const CompanyNameContainer = styled.div`
@@ -174,14 +174,22 @@ export const ExtraInfoContainer = styled.div`
   align-items: center;
 
   @media (max-width: ${mediaShift}) {
-      justify-content: flex-start;
-      flex-wrap: nowrap;
-    }
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
 
   p {
     color: hsl(180, 8%, 52%);
     margin-right: 10px;
     font-weight: 500;
-
   }
+`;
+
+export const CustomDivider = styled.div`
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  border-top: 1px solid hsl(180, 8%, 52%);
+  margin-top: 20px;
+
 `;

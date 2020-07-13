@@ -7,19 +7,17 @@ import {
   ClearContainer,
 } from "./headerStyles";
 
-let intViewportWidth = window.innerWidth;
-
-
 export default function Header({
   filteredItems,
   handleFilteredItems,
   setFilteredItems,
+  viewportSize,
 }) {
   return (
     <HeaderContainer>
       <img
         src={
-          intViewportWidth > 733
+          viewportSize > 733
             ? "/images/bg-header-desktop.svg"
             : "/images/bg-header-mobile.svg"
         }
