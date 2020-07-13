@@ -1,5 +1,5 @@
 import styled from "styled-components";
-const mediaShift = "733px";
+const mediaShift = "600px";
 
 export const JobPostDashboardContainer = styled.div`
   width: 100%;
@@ -24,13 +24,14 @@ export const JobPostContainer = styled.div`
   @media (max-width: ${mediaShift}) {
     width: 95%;
     flex-direction: column;
+    justify-content: space-evenly;
     height: 280px;
     margin: 45px 0 45px 0;
   }
 
   .featuredBar {
     position: absolute;
-    height: 100%;
+    height: 155px;
     width: 5px;
     overflow: hidden;
     background-color: hsl(180, 29%, 50%);
@@ -68,7 +69,9 @@ export const TabletsContainer = styled.div`
     height: auto;
     width: 100%;
     justify-content: flex-start;
+    align-items: flex-start;
     padding: 0;
+    margin-top: 10px;
   }
 `;
 

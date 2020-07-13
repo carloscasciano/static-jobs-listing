@@ -45,6 +45,7 @@ export const FilterTabletContainer = styled.div`
     background-color: hsl(180, 31%, 95%);
     color: hsl(180, 29%, 50%);
     font-weight: 700;
+    margin-bottom: 10px;
 
     :hover {
       cursor: pointer;
